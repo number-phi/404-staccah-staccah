@@ -53,18 +53,22 @@
                     }, 400);
                 }
             }
-        }, 75);
 
-        // var options = {
-        //     "animate": true,
-        //     "patternWidth": 500,
-        //     "patternHeight": 500,
-        //     "grainOpacity": 1,
-        //     "grainDensity": 1,
-        //     "grainWidth": 1,
-        //     "grainHeight": 1
-        // }
-        // grained("#container", options);
+            if(i== all.length)
+            {
+                var options = {
+                    "animate": true,
+                    "patternWidth": 500,
+                    "patternHeight": 500,
+                    "grainOpacity": 1,
+                    "grainDensity": 1,
+                    "grainWidth": 1,
+                    "grainHeight": 1
+                }
+                grained("#container", options);
+            }
+
+        }, 75);
     };
 
     animate(0);
